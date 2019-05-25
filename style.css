@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4em;
+}
+
+body {
+  margin: 0;
+}
+
+.main-header {
+  text-align: center;
+  border-bottom: 5px double rgb(47, 83, 103);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background: rgb(235, 241, 246);
+}
+
+h1 {
+  background: rgb(47, 83, 103);
+  color: white;
+  padding: 10px;
+  margin-top: 0;
+  box-shadow: 1px 1px 1px rgb(39, 178, 244);
+  font-size: 2.5em;
+}
+
+p {
+  opacity: .5;
+}
+
+form,
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+fieldset {
+  border: none;
+  padding: 1em;
+  flex-grow: 1;
+  margin: 0 30px;
+}
+
+.container-1,
+.container-2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-top: 2px solid rgb(235, 241, 246);
+  opacity: .9;
+}
+
+legend {
+  font-size: 1.25em;
+  font-weight: 800;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: 14px;
+
+}
+
+input,
+select {
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 5px;
+  background: rgb(235, 241, 246);
+  border: none;
+  max-width: 400px;
+  outline: none;
+}
+
+input:focus {
+  border: 1.3px solid coral;
+  transition: .1s ease-in;
+}
+
+select:focus {
+  border: 1.3px solid coral;
+  transition: .1s ease-in;
+}
+
+#zip-code:focus {
+  border: 1.3px solid coral;
+  transition: .1s ease-in;
+  width: 200px;
+}
+
+#zip-code {
+  width: 200px;
+}
+
+textarea {
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 5px;
+  background: rgb(235, 241, 246);
+  border: none;
+  width: 400px;
+  outline: none;
+  height: 175px;
+  margin: 20px 0;
+}
+
+textarea:focus {
+  border: 1.3px solid coral;
+  transition: .1s ease-in;
+}
+
+label {
+  font-size: 1em;
+  opacity: .7;
+  padding: 10px 0;
+  font-size: 1.05em;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  display: inline;
+  margin: 10px 0;
+}
+
+button {
+  width: 400px;
+  height: 50px;
+  border: none;
+  background: rgb(49, 133, 184);
+  color: lightyellow;
+  font-size: 1.2em;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: green;
+  transition: background-color 1s ease-out;
+  cursor: pointer;
+  opacity: .7;
+}
+
+footer {
+  text-align: center;
+}
+
+/*Media Queries */
+@media(min-width:768px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+  }
+
+  .box {
+    margin: 10px 0;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: row;
+    margin: 12px 0;
+  }
+
+  .info {
+    display: inline-block;
+    width: 150px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select {
+    width: 400px;
+  }
+
+  #zip-code {
+    width: 200px;
+  }
+
+  .box {
+    margin: 10px 0;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}

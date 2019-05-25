@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header class="main-header">
+    <h1 class="title">The Code Review</h1>
+    <h2 class="sign-up">Signup for our Newsletter</h2>
+    <p>Get the latest news on how your code is doing right in your inbox.</p>
+  </header>
+  <div class="flex-container">
+    <form action="index.html" method="post">
+
+
+      <fieldset class="container-1">
+        <legend>Contact Information</legend>
+
+        <div class="input">
+          <label class="info"for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="type here.." required>
+        </div>
+
+        <div class="input">
+          <label class="info"for="email">Email Adress</label>
+          <input type="email" id="email" name="email-adress" placeholder="type here.." required>
+        </div>
+
+        <div class="input">
+          <label class="info" for="number">Phone Number</label>
+          <input type="tel" id="number" name="phone-number" placeholder="(xxx)xxx-xxxx">
+        </div>
+
+        <div class="input">
+          <label class="info" for="adress">Street Adress</label>
+          <input type="text" id="adress" name="street-adress" placeholder="type here..">
+        </div>
+
+        <div class="input">
+          <label class="info"class="info" for="city">City</label>
+          <input type="text" id="city" name="city" placeholder="type here..">
+        </div>
+
+        <div class="input">
+          <label class="info" for="state">State</label>
+          <select id="state" name="user-state">
+            <option value="washington">Washington</option>
+            <option value="new york">New York</option>
+            <option value="illinois">Illinios</option>
+            <option value="wisconsin">Wisconsin</option>
+            <option value="oregon">Oregon</option>
+            <option value="vermont">Vermont</option>
+            <option value="connecticut">Connecticut</option>
+            <option value="idaho">Idaho</option>
+            <option value="california">California</option>
+          </select></div>
+
+        <div class="input">
+          <label class="info" for="zip-code">Zip Code</label>
+          <input type="number" id="zip-code" name="zip-code" class="zip-code" placeholder="type here..">
+        </div>
+
+      </fieldset>
+
+      <fieldset class="container-2">
+        <legend>Newsletter</legend>
+
+        <p>Select the newsletters you would like to recieve</p>
+        <div class="box">
+          <input type="checkbox" id="html-news" value="interest-html-news" name="interest-html-news">
+          <label for="html-news">HTML News</label>
+        </div>
+
+        <div class="box">
+          <input type="checkbox" id="css" value="interest-css-news" name="interest-css-news">
+          <label for="css">CSS News</label>
+        </div>
+
+        <div class="box">
+          <input type="checkbox" id="javascript" value="interest-javascript-news" name="interest-javascript-news">
+          <label for="javascript">Javascript News</label>
+        </div>
+
+        <label>Newsletter Fromat</label>
+        <div class="box">
+          <input type="radio" id="html" value="format-html" name="format-newsletter">
+          <label for="html">HTML</label>
+        </div>
+
+        <div class="box">
+          <input type="radio" id="plain-text" value="format-plain-text" name="format-newsletter">
+          <label for="plain-text">Plain text</label>
+        </div>
+
+        <label for="topic-interest">Other topics you'd like to hear</label>
+        <textarea id="topic-interest" name="user-topic-interest" placeholder="type here.."></textarea>
+
+
+        <button class="sign-up">SignUp</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; Copyright The code review<p>
+  </footer>
+</body>
+
+</html>
