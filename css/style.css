@@ -58,15 +58,12 @@ legend {
 ::placeholder {
   font-style: italic;
   font-size: 14px;
-
 }
 
 input[placeholder="Required"]::placeholder {
   text-align: right;
   padding-right: 7px;
-
 }
-
 
 input,
 select {
@@ -78,7 +75,6 @@ select {
   max-width: 400px;
   outline: none;
   padding-right: 15px;
-
 }
 
 input:focus {
