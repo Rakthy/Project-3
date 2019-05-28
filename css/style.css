@@ -63,6 +63,8 @@ legend {
 input[placeholder="Required"]::placeholder {
   text-align: right;
   padding-right: 7px;
+  color: coral;
+  opacity: .6;
 }
 
 input,
@@ -79,7 +81,7 @@ select {
 
 input:focus {
   border: 1.3px solid coral;
-  transition: .1s ease-in;
+  transition: .2s ease-in;
 }
 
 select:focus {
